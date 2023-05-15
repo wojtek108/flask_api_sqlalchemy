@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>__my_flask_app</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  </head>
+  <body>
+      <h1> Fill out form below</h1>
+    <form action ='/' method = 'POST'>
+    <input type = 'text' name = 'Fname'/>
+    <button type ='submit'>Submit</button>
+    </form>
+      <h2> Database </h2>
+    <div class = 'Tab'>
+    <table border = '1', cellspacing = '1'>
+        <tr><th>Id</th> <th>Name</th></tr> 
+        {% for i in n %}
+           <tr>
+               <td> {{ i.id }} </td>
+               <td> {{ i.Name }} </td>
+            </tr> 
+        {% endfor %}
+
+    </table>
+    </div>
+  </body>
+</html>

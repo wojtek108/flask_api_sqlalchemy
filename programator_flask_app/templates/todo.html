@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Todo app{% endblock %}
+{% block content %} 
+    <ul>
+        {% for i in n %}
+        <li> {{ i.id }}. {{ i.name }}</li>
+        {% endfor %}
+        <form action = '/' method = 'POST'>
+        <input type='text' name='task_frontend'>
+        <input type='submit' value='Dodaj!'>
+        </form>
+
+    </ul>
+{% endblock %}

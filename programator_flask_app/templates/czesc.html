@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Czesc! {% endblock %}
+{% block content %} 
+      {% if imie %}
+        <h1>Hello from {{imie}}!</h1>
+      {% else %}
+        <h1>Pozdrawiamy!</h1>
+      {% endif %}
+{% endblock %}
+
+

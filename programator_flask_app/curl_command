@@ -1,0 +1,7 @@
+curl -v -X POST -H "Content-Type: application/json" -d "{\"name\": \"nowy task\"}" http://localhost:5000/api/task
+
+curl -v -X PUT -H "Content-Type: application/json" -d "{\"name\": \"poprawiony i nowy task\"}" http://localhost:5000/api/task/1
+
+curl -v -X DELETE http://localhost:5000/api/task/5
+
+

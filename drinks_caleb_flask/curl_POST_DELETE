@@ -1,0 +1,3 @@
+curl -v -X POST -H "Content-Type: application/json" -d "{\"name\": \"tee\", \"description\": \"very tasty tee\"}" http://localhost:5000/drinks
+
+curl -v -X DELETE http://localhost:5000/1
